@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "590b46ee-8296-4ea7-86d4-e5e4df60636a",
+		"name": "Prova .NET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prova",
+			"item": [
+				{
+					"name": "cadastrar filmes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Titulo\": \"O senhor dos testes\",\r\n    \"sinopse\": \"asdnAJSNADJASJDNASDJ\",\r\n    \"Duracao\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/filmes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"filmes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar filmes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Titulo\" : \"O senhor dos testes\",\r\n    \"Sinopse\" : \"Este filme é um grande teste\",\r\n    \"Duracao\" : 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/filmes/6ec2298a-9af7-48b8-9f46-24615d540b47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"filmes",
+								"6ec2298a-9af7-48b8-9f46-24615d540b47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar filmes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/filmes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"filmes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar filme",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/filmes/6ec2298a-9af7-48b8-9f46-24615d540b47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"filmes",
+								"6ec2298a-9af7-48b8-9f46-24615d540b47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar sessoes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Dia\": \"2022-02-28\",\r\n    \"HoraInicio\": 23,\r\n    \"MinutoInicio\": 59,\r\n    \"QuantidadeLugares\": 90,\r\n    \"Preco\": 200,\r\n    \"IdFilme\": \"6ec2298a-9af7-48b8-9f46-24615d540b47\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sessoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sessoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar sessoes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Dia\" : \"2022-01-29\",\r\n    \"HoraInicio\" : 23,\r\n    \"MinutoInicio\" : 58,\r\n    \"QuantidadeLugares\" : 1000,\r\n    \"Preco\" : 10,\r\n    \"IdFilme\" : \"6ec2298a-9af7-48b8-9f46-24615d540b47\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sessoes/2dd26151-a084-4f59-b520-29a14214c865",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sessoes",
+								"2dd26151-a084-4f59-b520-29a14214c865"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comprar ingressos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sessoes/compraringresso/2dd26151-a084-4f59-b520-29a14214c865,10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sessoes",
+								"compraringresso",
+								"2dd26151-a084-4f59-b520-29a14214c865,10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar sessoes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sessoes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sessoes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar sessao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sessoes/2dd26151-a084-4f59-b520-29a14214c865",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sessoes",
+								"2dd26151-a084-4f59-b520-29a14214c865"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar sessao por filme e dia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/sessoes/pesquisafilme/6ec2298a-9af7-48b8-9f46-24615d540b47,2022-01-29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"sessoes",
+								"pesquisafilme",
+								"6ec2298a-9af7-48b8-9f46-24615d540b47,2022-01-29"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
