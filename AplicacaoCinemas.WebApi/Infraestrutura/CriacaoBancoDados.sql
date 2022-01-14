@@ -1,4 +1,4 @@
-﻿drop table if exists [AplicacaoCinemas].[dbo].[Sessoes];
+﻿drop table if exists [AplicacaoCinemas].[dbo].[Sessoes] ;
 
 drop table if exists [AplicacaoCinemas].[dbo].[Filmes]; 
 
